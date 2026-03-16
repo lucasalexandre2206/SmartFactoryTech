@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 470;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+.titulo2{
+  text-align: center;
+  margin-top: 20px;
+    
+}
+
+.card-geral{
+    display: flex;
+    gap: -50px;
+    justify-content: right;
+    
+}
+
+.card{
+    display: inline-block;
+    background-color: #004aad;
+    width: 40vh;
+    height: 15vh;
+    border-radius: 20px;
+    margin-top: 10vh;
+    color: rgb(255, 255, 255);
+    font-size: 6px;
+}
+
+.titulo-card{
+   margin: 0;
+   height: 30%;
+   padding: 0px 15px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: start;
+}
+.numero-card{
+    font: size 20px;
+}
+.card-geral p {
+  font-size: 20px;   /* aumenta só o número */
+  font-weight: bold; /* deixa mais destacado */
+  color: #ffffff;    /* opcional: muda a cor */
+  text-align: center; /* centraliza dentro do card */
+  width: 4vh;
+ 
+
+}
+
+
+.card-geral p {
+  font-size: 25px;   /* aumenta só o número */
+  font-weight: bold; /* deixa mais destacado */
+  color: #ffffff;    /* opcional: muda a cor */
+  text-align: left 5px;/* centraliza dentro do card */
+  width: 4vh;
+  
+  padding: 20px 60px  0px 10px;
+  }
+
+.titulo-card p {
+  font-size: 20px;   /* aumenta só o número */
+  font-weight: bold; /* deixa mais destacado */
+  color: #ffffff;    /* opcional: muda a cor */
+  text-align: left; /* centraliza dentro do card */
+  width: 4vh;
+  height: 15vh;
+}
+
+.card-info {
+    margin: 0;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 0px 10px;
+}
+
+.card-info .card-info-qtd,
+.card-info .card-info-nome {
+    margin: 0%;
+    padding: 0;
+    width: auto;
+    font-weight: bold; /* deixa mais destacado */
+    color: #ffffff; 
+}
+
+.card-info .card-info-qtd {
+    font-size: 35px;   /* aumenta só o número */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.card-info .card-info-nome  {
+    font-size: 15px;   /* aumenta só o número */
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.imagem-card1{
+    filter: brightness(0) invert(1);
+    margin-bottom: 30px;
+    margin-left: 45px;
+    width: 60x;
+    height: 60px;
+}
+
+.imagem-card2 {
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+    margin-left: 65px;
+    width: 60x;
+    height: 60px;
+}
+
+.imagem-card2 {
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+    margin-left: 65px;
+    width: 60x;
+    height: 60px;
+}
+
+.imagem-card3 {
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+    margin-left: 200px;
+    margin-top: -55px;
+    width: 60x;
+    height: 60px;
+}
+.imagem-card4{
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+    margin-left: 200px;
+    margin-top: -55px;
+    width: 60x;
+    height: 60px;
+}
