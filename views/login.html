@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Login - SmartFactory</title>
     <link rel="stylesheet" href="../css/css_components/Login.css">
 </head>
-
 <body>
 
-    <div class="container">
+    <div class="container-principal">
+        <div class="lado-logo">
+            <img src="../img/logo.t.png" alt="SmartFactory Logo">    
+        </div>
+        
+        <div class="lado-login">
+            <div class="login-card">
+                <div class="form-box">
+                    <input type="text" placeholder="USUÁRIO" id="usuario">
+                    <input type="password" placeholder="SENHA" id="senha">
 
-        <img src="../img/Logo.png">
-       
+                    <div class="options">
+                        <label><input type="checkbox"> LEMBRA SENHA</label>
+                        <label><input type="checkbox"> ESQUECI A SENHA</label>
+                    </div>
 
-        <div class="form-box">
-            <input type="text" placeholder="USUARIO" id="usuario">
-            <input type="password" placeholder="SENHA" id="senha">
-
-            <div class="options">
-                <label><input type="checkbox"> LEMBRA SENHA</label>
-                <label><input type="checkbox"> ESQUECI A SENHA</label>
+                    <button onclick="login()">LOGIN</button>
+                </div>
             </div>
-
-            <button onclick="login()">LOGIN</button>
-
         </div>
     </div>
 
     <script src="Login.js"></script>
-
 </body>
-
 </html>
