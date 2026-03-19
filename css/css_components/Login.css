@@ -79,3 +79,10 @@ body{
     font-weight:bold;
     text-decoration:underline;
     }
+    
+    .container img{
+    width: 330px; /* ajusta o tamanho */
+    height: auto; /* mantém proporção */
+    display: block;
+    margin: 0 auto 20px; /* centraliza e dá espaço embaixo */
+}

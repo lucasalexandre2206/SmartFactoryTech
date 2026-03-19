@@ -1,10 +1,9 @@
-function login() {
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
+localStorage.setItem("tipoUsuario", usuario.tipo)
 
-    if (usuario === "admin" && senha === "1234") {
-        alert("Login realizado com sucesso!");
-    } else {
-        alert("Usuário ou senha incorretos!");
-    }
+let tipo = usuario.tipo
+
+if(tipo === "admin"){
+    window.location.href = "views/admin/dashboard.html"
+}else{
+    window.location.href = "views/operador/dashboard.html"
 }

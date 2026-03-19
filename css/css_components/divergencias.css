@@ -1,0 +1,133 @@
+body {
+  margin: 10px;
+  font-family: Arial;
+  background: #eaeaea;
+}
+
+
+.container {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 80px;
+  background: #0b3d91;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.sidebar div {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+
+.cards {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+
+.card {
+  flex: 1;
+  background: #114ea3;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+.titulo {
+  text-align: center;
+}
+
+
+.alerta {
+  background: #ff5c5c;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+.filtros {
+  background: #114ea3;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.filtros input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+.filtros button {
+  padding: 10px 20px;
+  border: none;
+  background: #0b3d91;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.tabela {
+  background: #114ea3;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+
+th {
+  background: #0b3d91;
+  color: white;
+  padding: 10px;
+}
+
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.dot {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+.amarelo { background: gold; }
+.vermelho { background: red; }
+.verde { background: green; }

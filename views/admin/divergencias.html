@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Divergências</title>
+    <link rel="stylesheet" href="../../css/css_components/divergencias.css">
+</head>
+
+<body>
+    <div id="sidebar"></div>
+
+    <div class="container">
+        <div id="sidebar"></div>
+
+
+        <!-- CONTEÚDO -->
+        <div class="main">
+            <h2>Divergencias de produção</h2>
+
+
+            <!-- CARDS -->
+            <div class="cards">
+                <div class="card">
+                    <p>Divergências Hoje</p>
+                    <h3 id="divHoje"></h3>
+                </div>
+
+
+                <div class="card">
+                    <p>Divergências</p>
+                    <h3 id="criticas"></h3>
+                </div>
+
+
+                <div class="card">
+                    <p>Máquinas com erro</p>
+                    <h3 id="maqErro"></h3>
+                </div>
+
+
+                <div class="card">
+                    <p>Peças divergentes</p>
+                    <h3 id="pecas"></h3>
+                </div>
+            </div>
+
+
+            <!-- ALERTA -->
+            <p class="titulo">Alerta de Divergencias</p>
+            <div class="alerta">
+                ⚠ Máquina Injetora 02 com divergência crítica ⚠
+            </div>
+
+
+            <!-- FILTROS -->
+            <p class="titulo">Filtros</p>
+            <div class="filtros">
+                <input type="date">
+                <input type="text" placeholder="Maquina">
+                <input type="text" placeholder="Status">
+                <input type="text" placeholder="Produtos">
+                <button onclick="filtrar()">Filtros</button>
+            </div>
+
+
+            <!-- TABELA -->
+            <p class="titulo">TABELA DE DADOS</p>
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Maquina</th>
+                            <th>Produto</th>
+                            <th>Sistema</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                            <th>Alerta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaDados"></tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="../../js/loadSidebar.js"></script>
+    <script src="../../js/"></script>
+</body>
+
+</html>

@@ -1,9 +1,71 @@
-const links = document.querySelectorAll(".menu-item") 
+function carregarSidebar(){
 
-links.forEach(link => {
+let tipo = localStorage.getItem("tipoUsuario")
 
-if(link.href === window.location.href){
-link.classList.add("active")
+let menu = ""
+
+if(tipo === "admin"){
+
+menu = `
+<a class="item" href="/views/admin/dashboard.html">
+    <div class="icon">🏠</div>
+    <span>Dashboard</span>
+</a>
+
+<a class="item" href="/views/admin/usuarios.html">
+    <div class="icon">👤</div>
+    <span>Usuários</span>
+</a>
+
+<a class="item" href="/views/admin/maquinas.html">
+    <div class="icon">⚙</div>
+    <span>Máquinas</span>
+</a>
+
+<a class="item" href="/views/admin/transferencias.html">
+    <div class="icon">🔄</div>
+    <span>Transferências</span>
+</a>
+
+<a class="item" href="/views/admin/divergencias.html">
+    <div class="icon">❌</div>
+    <span>Divergências</span>
+</a>
+
+<a class="item logout" href="/login.html">
+    <div class="icon">↩</div>
+    <span>Sair</span>
+</a>
+`
+
+}else{
+
+menu = `
+<a class="item" href="/views/operador/dashboard.html">
+    <div class="icon">🏠</div>
+    <span>Dashboard</span>
+</a>
+
+<a class="item" href="/views/operador/transferencias.html">
+    <div class="icon">🔄</div>
+    <span>Transferências</span>
+</a>
+
+<a class="item" href="/views/operador/divergencias.html">
+    <div class="icon">❌</div>
+    <span>Divergências</span>
+</a>
+
+<a class="item logout" href="/login.html">
+    <div class="icon">↩</div>
+    <span>Sair</span>
+</a>
+`
+
 }
 
-})
+document.getElementById("menuSidebar").innerHTML = menu
+
+}
+
+carregarSidebar()

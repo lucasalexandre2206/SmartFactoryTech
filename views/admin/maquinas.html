@@ -2,22 +2,70 @@
 <html>
 
 <head>
-
-<link rel="stylesheet" href="../../css/css_components/sidebar.css">
-
+    <meta charset="UTF-8">
+    <title>Cadastro de Máquinas</title>
+    <link rel="stylesheet" href="../../css/css_components/maquinas.css">
 </head>
 
+
 <body>
+    <div id="sidebar"></div>
 
-<div id="sidebar"></div>
 
-<div class="conteudo">
+    <div class="container">
 
-<h1>Maquinas</h1>
 
-</div>
+        <h1>Cadastro de Máquinas</h1>
 
-<script src="../../js/loadSidebar.js"></script>
+
+        <div class="form">
+
+
+            <input type="text" id="nomeMaquina" placeholder="Nome da Máquina">
+            <input type="text" id="codigoMaquina" placeholder="Código">
+            <input type="text" id="setorMaquina" placeholder="Setor">
+
+
+            <select id="statusMaquina">
+                <option value="ativo">Ativo</option>
+                <option value="manutencao">Manutenção</option>
+            </select>
+
+
+            <button onclick="salvarMaquina()">Salvar</button>
+
+
+        </div>
+
+
+        <h2>Máquinas cadastradas</h2>
+
+
+        <table>
+
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Código</th>
+                    <th>Setor</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+
+            <tbody id="tabelaMaquinas"></tbody>
+
+
+        </table>
+
+
+    </div>
+
+    <script src="../../js/loadSidebar.js"></script>
+    <script src="../../js/maquinas.js"></script>
+
 
 </body>
 
