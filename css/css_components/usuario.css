@@ -11,11 +11,13 @@ body {
 
 h1 {
     color: #114fa8;
+    text-align: center;
 }
 
 h2 {
     margin-top: 40px;
     color: #114fa8;
+    text-align: center;
 }
 
 .form {

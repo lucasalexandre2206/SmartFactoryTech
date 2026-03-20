@@ -73,6 +73,14 @@ width: 25px;
 height: 25px;
 filter: brightness(0) invert(1);
 }
+
+.avatar{
+font-size:26px;
+margin-bottom:5px;
+width: 40px;
+height: 40px;
+filter: brightness(0) invert(1);
+}
 /* texto */
 .item span{
 font-size:13px;
@@ -88,6 +96,7 @@ margin-bottom:20px;
 color:white;
 font-size:28px;
 margin-bottom:30px;
+margin-top: 20px;
 }
 
 body{

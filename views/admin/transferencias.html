@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Entrada e Saída</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="sidebar"></div>
+<meta charset="UTF-8">
+<title>Entrada e Saída</title>
 
-<h1>Entrada e Saída</h1>
+<link rel="stylesheet" href="../../css/css_components/sidebar.css">
+<link rel="stylesheet" href="../../css/css_components/Transferencia.css">
+
+</head>
+
+<body>
+
+<div id="sidebar"></div>
 
 <div class="container">
 
-    <div class="form-group">
-        <label>Tipo de Movimentação</label>
-        <select id="tipo">
-            <option>Entrada</option>
-            <option>Saída</option>
-        </select>
-    </div>
+<h1>Entrada e Saída</h1>
 
-    <div class="form-group">
-        <label>Produto</label>
-        <select id="produto">
-            <option>Produto X</option>
-            <option>Produtoo Y</option>
-        </select>
-    </div>
+<!-- FORM -->
+<div class="form">
 
-    <div class="form-group">
-        <label>Quantidade</label>
-        <input type="number" id="quantidade" placeholder="Ex: 50">
-    </div>
+<select id="tipo">
+<option value="Entrada">Entrada</option>
+<option value="Saída">Saída</option>
+</select>
 
-    <div class="form-group">
-        <label>Responsável</label>
-        <input type="text" id="responsavel" placeholder="Nome do Responsável">
-    </div>
+<input type="text" id="produto" placeholder="Produto">
 
-    <div class="form-group observacao">
-        <label>Observação</label>
-        <textarea id="obs" placeholder="Informações adicionais (opcional)"></textarea>
-    </div>
+<input type="number" id="quantidade" placeholder="Quantidade">
 
-    <button onclick="registrar()">Registrar</button>
+<input type="text" id="responsavel" placeholder="Responsável">
+
+<input type="text" id="observacao" placeholder="Observação">
+
+<button onclick="registrar()">Registrar</button>
 
 </div>
+
+<!-- CARDS -->
+<div class="cards">
+
+<div class="card">
+<p>Entradas Hoje</p>
+<h2 id="totalEntradas">0</h2>
+</div>
+
+<div class="card">
+<p>Saídas Hoje</p>
+<h2 id="totalSaidas">0</h2>
+</div>
+
+</div>
+
+<!-- PESQUISA -->
+<div class="pesquisa-box">
+
+<input type="text" id="pesquisa" placeholder="Buscar produto...">
+
+<button onclick="pesquisar()">Pesquisar</button>
+
+</div>
+
+<h1>Historico de movimentação</h1>
+
+<!-- TABELA -->
+<table>
+
+<thead>
+<tr>
+<th>Data</th>
+<th>Tipo</th>
+<th>Produto</th>
+<th>Quantidade</th>
+<th>Responsável</th>
+<th>Obs</th>
+</tr>
+</thead>
+
+<tbody id="tabelaMovimentos"></tbody>
+
+</table>
+
+</div>
+
 <script src="../../js/loadSidebar.js"></script>
-<script src="../../Transferencia.js"></script>
+<script src="../../js/Transferencia.js"></script>
+
 </body>
 </html>
