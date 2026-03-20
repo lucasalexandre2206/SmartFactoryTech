@@ -1,34 +1,35 @@
-*{
+* {
     margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 470;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 470;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     margin-top: 30px;
     color: #114fa8;
-   
-}
-.titulo2{
-  text-align: center;
-  margin-top: 20px;
-  color: #114fa8;
-    
+
 }
 
-.card-geral{
+.titulo2 {
+    text-align: center;
+    margin-top: 35px;
+    color: #114fa8;
+
+}
+
+.card-geral {
     display: flex;
     gap: 20px;
     justify-content: center;
     padding-left: 15vh;
 }
 
-.card{
+.card {
     display: inline-block;
     background-color: #004aad;
     width: 40vh;
@@ -39,46 +40,60 @@
     font-size: 6px;
 }
 
-.titulo-card{
-   margin: 0;
-   height: 30%;
-   padding: 0px 15px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: start;
+.titulo-card {
+    margin: 0;
+    height: 30%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
-.numero-card{
+
+.numero-card {
     font: size 20px;
 }
+
 .card-geral p {
-  font-size: 20px;   /* aumenta só o número */
-  font-weight: bold; /* deixa mais destacado */
-  color: #ffffff;    /* opcional: muda a cor */
-  text-align: center; /* centraliza dentro do card */
-  width: 4vh;
- 
+    font-size: 20px;
+    /* aumenta só o número */
+    font-weight: bold;
+    /* deixa mais destacado */
+    color: #ffffff;
+    /* opcional: muda a cor */
+    text-align: center;
+    /* centraliza dentro do card */
+    width: 4vh;
+
 
 }
 
 
 .card-geral p {
-  font-size: 25px;   /* aumenta só o número */
-  font-weight: bold; /* deixa mais destacado */
-  color: #ffffff;    /* opcional: muda a cor */
-  text-align: left 5px;/* centraliza dentro do card */
-  width: 4vh;
-  
-  padding: 20px 60px  0px 10px;
-  }
+    font-size: 25px;
+    /* aumenta só o número */
+    font-weight: bold;
+    /* deixa mais destacado */
+    color: #ffffff;
+    /* opcional: muda a cor */
+    text-align: left 5px;
+    /* centraliza dentro do card */
+    width: 4vh;
+
+    padding: 20px 60px 0px 10px;
+}
 
 .titulo-card p {
-  font-size: 20px;   /* aumenta só o número */
-  font-weight: bold; /* deixa mais destacado */
-  color: #ffffff;    /* opcional: muda a cor */
-  text-align: left; /* centraliza dentro do card */
-  width: 4vh;
-  height: 15vh;
+    font-size: 20px;
+    /* aumenta só o número */
+    font-weight: bold;
+    /* deixa mais destacado */
+    color: #ffffff;
+    /* opcional: muda a cor */
+    text-align: left;
+    /* centraliza dentro do card */
+    width: 4vh;
+    height: 15vh;
 }
 
 .card-info {
@@ -98,27 +113,30 @@
     margin: 0%;
     padding: 0;
     width: auto;
-    font-weight: bold; /* deixa mais destacado */
-    color: #ffffff; 
+    font-weight: bold;
+    /* deixa mais destacado */
+    color: #ffffff;
 }
 
 .card-info .card-info-qtd {
-    font-size: 35px;   /* aumenta só o número */
+    font-size: 35px;
+    /* aumenta só o número */
     height: auto;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
-.card-info .card-info-nome  {
-    font-size: 15px;   /* aumenta só o número */
+.card-info .card-info-nome {
+    font-size: 15px;
+    /* aumenta só o número */
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 
-.imagem-card1{
+.imagem-card1 {
     filter: brightness(0) invert(1);
     margin-bottom: 30px;
     margin-left: 45px;
@@ -150,11 +168,33 @@
     width: 60x;
     height: 60px;
 }
-.imagem-card4{
+
+.imagem-card4 {
     filter: brightness(0) invert(1);
     margin-bottom: 15px;
     margin-left: 200px;
     margin-top: -55px;
     width: 60x;
     height: 60px;
+}
+
+.container-grafico {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    padding: 80px;
+    margin-bottom: 35px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 50%;
+   
+}
+
+canvas {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     border: solid;
 }
