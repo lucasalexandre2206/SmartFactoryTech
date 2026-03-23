@@ -62,7 +62,13 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 20px;
+  
+
+    
+  
 }
+    
+
 
 .logo-login{
     width: 350px;
@@ -83,7 +89,7 @@ body {
 .form-box {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 25px;
 }
 
 /* Estilização dos Inputs (Ovais) */
