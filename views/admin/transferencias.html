@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Entrada e Saída</title>
+    <meta charset="UTF-8">
+    <title>Entrada e Saída</title>
 
-<link rel="stylesheet" href="../../css/css_components/sidebar.css">
-<link rel="stylesheet" href="../../css/css_components/Transferencia.css">
-
+    <link rel="stylesheet" href="../../css/css_components/sidebar.css">
+    <link rel="stylesheet" href="../../css/css_components/Transferencia.css">
 </head>
-
 <body>
 
-<div id="sidebar"></div>
+    <div id="sidebar"></div>
 
-<div class="container">
+    <div class="container">
 
-<h1>Entrada e Saída</h1>
+        <h1>Entrada e Saída</h1>
 
-<!-- FORM -->
-<div class="form">
+        <div class="form">
+            <select id="tipo">
+                <option value="Entrada">Entrada</option>
+                <option value="Saída">Saída</option>
+            </select>
 
-<select id="tipo">
-<option value="Entrada">Entrada</option>
-<option value="Saída">Saída</option>
-</select>
+            <select id="produto">
+    <option value="">Selecione um produto</option>
+    <option value="Produto X">Produto X</option>
+    <option value="Produto Y">Produto Y</option>
+    <option value="Produto Z">Produto Z</option>
+            </select>
+            <input type="number" id="quantidade" placeholder="Quantidade">
+            <input type="text" id="responsavel" placeholder="Responsável">
+            <input type="text" id="observacao" placeholder="Observação">
 
-<input type="text" id="produto" placeholder="Produto">
+            <button onclick="registrar()">Registrar</button>
+        </div>
 
-<input type="number" id="quantidade" placeholder="Quantidade">
+        <div class="cards">
+            <div class="card">
+                <p>Entradas Hoje</p>
+                <h2 id="totalEntradas">0</h2>
+            </div>
 
-<input type="text" id="responsavel" placeholder="Responsável">
+            <div class="card">
+                <p>Saídas Hoje</p>
+                <h2 id="totalSaidas">0</h2>
+            </div>
 
-<input type="text" id="observacao" placeholder="Observação">
+            <div class="card">
+                <p>Estoque Atual</p>
+                <h2 id="totalEstoque">0</h2>
+            </div>
+        </div>
 
-<button onclick="registrar()">Registrar</button>
+        <h1>Histórico de movimentação</h1>
 
-</div>
+        <div class="tabela-area">
+            <div class="historico-filtros">
+                <div class="buscar-box">
+                    <span class="icone-busca">⌕</span>
+                    <input type="text" placeholder="Buscar Produto...">
+                </div>
 
-<!-- CARDS -->
-<div class="cards">
+                <select>
+                    <option>Todos os tipos</option>
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
 
-<div class="card">
-<p>Entradas Hoje</p>
-<h2 id="totalEntradas">0</h2>
-</div>
+                <select>
+                    <option>Data</option>
+                    <option>Hoje</option>
+                    <option>Semana</option>
+                    <option>Mês</option>
+                </select>
+            </div>
 
-<div class="card">
-<p>Saídas Hoje</p>
-<h2 id="totalSaidas">0</h2>
-</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Responsável</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaMovimentos"></tbody>
+            </table>
+        </div>
 
-</div>
+    </div>
 
-<!-- PESQUISA -->
-<div class="pesquisa-box">
-
-<input type="text" id="pesquisa" placeholder="Buscar produto...">
-
-<button onclick="pesquisar()">Pesquisar</button>
-
-</div>
-
-<h1>Historico de movimentação</h1>
-
-<!-- TABELA -->
-<table>
-
-<thead>
-<tr>
-<th>Data</th>
-<th>Tipo</th>
-<th>Produto</th>
-<th>Quantidade</th>
-<th>Responsável</th>
-<th>Obs</th>
-</tr>
-</thead>
-
-<tbody id="tabelaMovimentos"></tbody>
-
-</table>
-
-</div>
-
-<script src="../../js/loadSidebar.js"></script>
-<script src="../../js/Transferencia.js"></script>
-
+    <script src="../../js/loadSidebar.js"></script>
+    <script src="../../js/estoque.js"></script>
 </body>
 </html>
