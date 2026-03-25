@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrada e Saída</title>
-
     <link rel="stylesheet" href="../../css/css_components/Transferencia.css">
 </head>
 <body>
@@ -21,16 +21,14 @@
             </select>
 
             <select id="produto">
-    <option value="">Selecione um produto</option>
-    <option value="Produto X">Produto X</option>
-    <option value="Produto Y">Produto Y</option>
-    <option value="Produto Z">Produto Z</option>
+                <option value="">Selecione um produto</option>
             </select>
+
             <input type="number" id="quantidade" placeholder="Quantidade">
             <input type="text" id="responsavel" placeholder="Responsável">
             <input type="text" id="observacao" placeholder="Observação">
 
-            <button onclick="registrar()">Registrar</button>
+            <button type="button" onclick="registrar()">Registrar</button>
         </div>
 
         <div class="cards">
@@ -53,45 +51,45 @@
         <h1>Histórico de movimentação</h1>
 
         <div class="tabela-area">
-    <div class="historico-filtros">
-        <div class="buscar-box">
-            <span class="icone-busca">⌕</span>
-            <input type="text" id="buscarProduto" placeholder="Buscar Produto...">
+            <div class="historico-filtros">
+                <div class="buscar-box">
+                    <span class="icone-busca">⌕</span>
+                    <input type="text" id="buscarProduto" placeholder="Buscar Produto...">
+                </div>
+
+                <select id="filtroTipo">
+                    <option value="">Todos os tipos</option>
+                    <option value="Entrada">Entrada</option>
+                    <option value="Saída">Saída</option>
+                </select>
+
+                <select id="filtroData">
+                    <option value="">Data</option>
+                    <option value="Hoje">Hoje</option>
+                    <option value="Ontem">Ontem</option>
+                    <option value="Semana">Semana</option>
+                    <option value="Mês">Mês</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Responsável</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaMovimentos"></tbody>
+            </table>
         </div>
 
-        <select id="filtroTipo">
-            <option value="">Todos os tipos</option>
-            <option value="Entrada">Entrada</option>
-            <option value="Saída">Saída</option>
-        </select>
-
-        <select id="filtroData">
-    <option value="">Data</option>
-    <option value="Hoje">Hoje</option>
-    <option value="Ontem">Ontem</option> <!-- NOVO -->
-    <option value="Semana">Semana</option>
-    <option value="Mês">Mês</option>
-</select>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Tipo</th>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Responsável</th>
-                <th>Observação</th>
-            </tr>
-        </thead>
-
-        <tbody id="tabelaMovimentos"></tbody>
-    </table>
-</div>
-
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="../../js/components/loadSidebar.js"></script>
     <script src="../../js/pages/estoque.js"></script>
 </body>
