@@ -10,53 +10,18 @@
 
 <body>
 
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar" id="sidebarMenu">
 
+        <div class="menu-icon" id="menuToggle">☰</div>
 
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-
-        <a class="item" href="/views/dashboard.html">
-            <div class="icon"><img src="/img/casa1.png" alt="" class="casa"></div>
-            <span>Dashboard</span>
-        </a>
-
-        <a class="item" href="/views/admin/usuarios.html">
-            <div class="icon"><img src="/img/avatar-de-perfil.png" alt="" class="avatar"></div>
-            <span>Usuários</span>
-        </a>
-
-        <a class="item" href="/views/admin/maquinas.html">
-            <div class="icon">⚙</div>
-            <span>Máquinas</span>
-        </a>
-
-        <a class="item" href="/views/transferencias.html">
-            <div class="icon"><img src="/img/tranferencia.png" alt="" class="imagem2"></div>
-            <span>Transferências</span>
-        </a>
-
-        <a class="item" href="/views/divergencias.html">
-            <div class="icon"><img src="/img/x.png" class="x"></div>
-            <span>Divergências</span>
-        </a>
-
-
-
-        <a class="item logout" href="../login.html">
-            <div class="icon">↩</div>
-            <span>Sair</span>
-        </a>
+        <div id="menuSidebar"></div>
 
     </div>
 
-    
+
 
 </body>
 
-<script>
-        function toggleMenu() {
-            document.getElementById("sidebar").classList.toggle("ativo")
-        }
-    </script>
+
 
 </html>

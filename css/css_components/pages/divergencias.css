@@ -1,5 +1,5 @@
 *{
-  
+ 
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -7,16 +7,20 @@
     "wdth" 100;
 }
 
+
 body {
   font-family: Arial;
-  background: #eaeaea;
+  background: #ffffff;
 }
+
+
 
 
 .container {
   display: flex;
   padding: 40px;
 }
+
 
 .main {
   flex: 1;
@@ -25,11 +29,14 @@ body {
 }
 
 
+
+
 h1{
 text-align:center;
 color:#114fa8;
 margin-bottom:30px;
 }
+
 
 .cards {
   display: flex;
@@ -37,6 +44,8 @@ margin-bottom:30px;
   margin: 40px 0;
  
 }
+
+
 
 
 .card {
@@ -48,11 +57,14 @@ margin-bottom:30px;
 }
 
 
+
+
 .titulo {
   padding-bottom:30px;
   text-align: center;
   color:#114fa8;
   font-size: 25px;
+
 
 }
 .titulo1 {
@@ -63,6 +75,7 @@ margin-bottom:30px;
   font-size: 25px;
 }
 
+
 .titulo2 {
   padding-top: 30px;
   text-align: center;
@@ -71,6 +84,7 @@ margin-bottom:30px;
   font-size: 25px;
 }
 
+
 .alerta {
   background: #ff5c5c;
   color: white;
@@ -78,6 +92,8 @@ margin-bottom:30px;
   border-radius: 15px;
   text-align: center;
 }
+
+
 
 
 .filtros {
@@ -90,11 +106,15 @@ margin-bottom:30px;
 }
 
 
+
+
 .filtros input {
   padding: 10px;
   border-radius: 8px;
   border: none;
 }
+
+
 
 
 .filtros button {
@@ -106,11 +126,15 @@ margin-bottom:30px;
 }
 
 
+
+
 .tabela {
-  background: #114ea3;
+  background: #ffffff;
   padding: 10px;
   border-radius: 15px;
 }
+
+
 
 
 table {
@@ -120,6 +144,8 @@ table {
 }
 
 
+
+
 th {
   background: #0b3d91;
   color: white;
@@ -127,10 +153,14 @@ th {
 }
 
 
+
+
 td {
-  padding: 10px;
+  padding: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
   text-align: center;
 }
+
+
 
 
 .dot {
@@ -139,6 +169,8 @@ td {
   display: inline-block;
   border-radius: 50%;
 }
+
+
 
 
 .amarelo { background: gold; }
