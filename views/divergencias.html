@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <title>Divergências</title>
@@ -14,68 +13,54 @@
     <div class="container">
         <div id="sidebar"></div>
 
-
-        <!-- CONTEÚDO -->
         <div class="main">
-            <h1>Divergencias de produção</h1>
+            <h1>Divergências de produção</h1>
 
-
-            <!-- CARDS -->
             <div class="cards">
                 <div class="card">
                     <p>Divergências Hoje</p>
-                    <h3 id="divHoje"></h3>
+                    <h3 id="divHoje">0</h3>
                 </div>
-
 
                 <div class="card">
                     <p>Divergências</p>
-                    <h3 id="criticas"></h3>
+                    <h3 id="criticas">0</h3>
                 </div>
-
 
                 <div class="card">
                     <p>Máquinas com erro</p>
-                    <h3 id="maqErro"></h3>
+                    <h3 id="maqErro">0</h3>
                 </div>
-
 
                 <div class="card">
                     <p>Peças divergentes</p>
-                    <h3 id="pecas"></h3>
+                    <h3 id="pecas">0</h3>
                 </div>
             </div>
 
-
-            <!-- ALERTA -->
-            <p class="titulo">Alerta de Divergencias</p>
-            <div class="alerta">
-                ⚠ Máquina Injetora 02 com divergência crítica ⚠
+            <p class="titulo">Alerta de Divergências</p>
+            <div class="alerta" id="alertaTexto">
+                Nenhuma divergência crítica no momento.
             </div>
 
-
-            <!-- FILTROS -->
             <p class="titulo1">Filtros</p>
             <div class="filtros">
-                <input type="date">
-                <input type="text" placeholder="Maquina">
-                <input type="text" placeholder="Status">
-                <input type="text" placeholder="Produtos">
-                <button onclick="filtrar()">Filtros</button>
+                <input type="date" id="filtroData">
+                <input type="text" id="filtroMaquina" placeholder="Máquina">
+                <input type="text" id="filtroStatus" placeholder="Status">
+                <input type="text" id="filtroProduto" placeholder="Produto">
+                <button type="button" onclick="filtrar()">Filtrar</button>
+                <button type="button" onclick="limparFiltros()">Limpar</button>
             </div>
 
-
-            <!-- TABELA -->
             <p class="titulo2">Tabela de Dados</p>
             <div class="tabela">
                 <table>
                     <thead>
                         <tr>
                             <th>Data</th>
-                            <th>Maquina</th>
+                            <th>Máquina</th>
                             <th>Produto</th>
-                            <th>Sistema</th>
-                            <th>Quantidade</th>
                             <th>Status</th>
                             <th>Alerta</th>
                         </tr>
@@ -83,14 +68,12 @@
                     <tbody id="tabelaDados"></tbody>
                 </table>
             </div>
-
-
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="../../js/pages/divergencias.js"></script>
     <script src="/js/components/sidebar.js"></script>
     <script src="../../js/components/loadSidebar.js"></script>
 </body>
-
 </html>
