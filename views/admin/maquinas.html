@@ -29,6 +29,12 @@
             <button type="button" onclick="salvarMaquina()">Salvar</button>
         </div>
 
+        <div class="barra-pesquisa">
+            <input type="text" id="pesquisaUsuario" placeholder="Pesquisar usuario..." onkeyup="pesquisarUsuario()">
+            <button onclick="pesquisarUsuario()">Pesquisar</button>
+            <button onclick="limparBusca()" class="btn-limpar">Limpar</button>
+        </div>
+
         <h2>Máquinas cadastradas</h2>
 
         <table>

@@ -4,16 +4,20 @@ body {
     margin: 0;
 }
 
+
 .container {
     margin-left: 90px;
     padding: 40px;
 }
+
 
 h1 {
     color: #114fa8;
     text-align: center;
     margin-bottom: 40px;
 }
+
+
 
 
 h2 {
@@ -23,6 +27,7 @@ h2 {
     margin-bottom: 30px;
 }
 
+
 .form {
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -30,12 +35,14 @@ h2 {
     margin-bottom: 30px;
 }
 
+
 input,
 select {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+
 
 button {
     background: #114fa8;
@@ -46,17 +53,23 @@ button {
     cursor: pointer;
 }
 
+
 button:hover {
     background: #0a3c84;
 }
 
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 th {
     background: #114fa8;
@@ -64,25 +77,30 @@ th {
     padding: 12px;
 }
 
+
 td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: center;
 }
 
+
 .status-ativo {
     color: green;
     font-weight: bold;
 }
+
 
 .status-inativo {
     color: red;
     font-weight: bold;
 }
 
+
 .btn-excluir {
     background: #dc2626;
 }
+
 
 .btn-excluir:hover {
     background: #b91c1c;

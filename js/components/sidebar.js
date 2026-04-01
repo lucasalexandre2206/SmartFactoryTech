@@ -15,7 +15,7 @@ function carregarSidebar() {
         </a>
 
         <a class="item" href="/views/admin/usuarios.html">
-            <div class="icon"><img src="/img/avatar-de-perfil.png"></div>
+            <div class="icon"><img src="/img/user.png"></div>
             <span>Usuários</span>
         </a>
 

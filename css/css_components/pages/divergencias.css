@@ -8,6 +8,8 @@
 }
 
 
+
+
 body {
   font-family: Arial;
   background: #ffffff;
@@ -16,10 +18,16 @@ body {
 
 
 
+
+
+
+
 .container {
   display: flex;
   padding: 40px;
 }
+
+
 
 
 .main {
@@ -31,11 +39,17 @@ body {
 
 
 
+
+
+
+
 h1{
 text-align:center;
 color:#114fa8;
 margin-bottom:30px;
 }
+
+
 
 
 .cards {
@@ -44,6 +58,10 @@ margin-bottom:30px;
   margin: 40px 0;
  
 }
+
+
+
+
 
 
 
@@ -59,11 +77,17 @@ margin-bottom:30px;
 
 
 
+
+
+
+
 .titulo {
   padding-bottom:30px;
   text-align: center;
   color:#114fa8;
   font-size: 25px;
+
+
 
 
 }
@@ -76,6 +100,8 @@ margin-bottom:30px;
 }
 
 
+
+
 .titulo2 {
   padding-top: 30px;
   text-align: center;
@@ -85,6 +111,8 @@ margin-bottom:30px;
 }
 
 
+
+
 .alerta {
   background: #ff5c5c;
   color: white;
@@ -92,6 +120,10 @@ margin-bottom:30px;
   border-radius: 15px;
   text-align: center;
 }
+
+
+
+
 
 
 
@@ -108,11 +140,19 @@ margin-bottom:30px;
 
 
 
+
+
+
+
 .filtros input {
   padding: 10px;
   border-radius: 8px;
   border: none;
 }
+
+
+
+
 
 
 
@@ -128,6 +168,10 @@ margin-bottom:30px;
 
 
 
+
+
+
+
 .tabela {
   background: #ffffff;
   padding: 10px;
@@ -137,11 +181,24 @@ margin-bottom:30px;
 
 
 
+
+
+
+
 table {
   width: 100%;
+   border-radius: 12px;      
+  overflow: hidden;          
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 auto;
   background: white;
   border-collapse: collapse;
 }
+
+
+
+
 
 
 
@@ -155,10 +212,18 @@ th {
 
 
 
+
+
+
+
 td {
   padding: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
   text-align: center;
 }
+
+
+
+
 
 
 
@@ -173,6 +238,12 @@ td {
 
 
 
+
+
+
+
 .amarelo { background: gold; }
 .vermelho { background: red; }
 .verde { background: green; }
+
+
