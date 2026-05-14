@@ -1,29 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;
+}
+
+
 body {
     font-family: Arial;
     background: #f4f6fb;
     margin: 0;
 }
 
-
+/* CONTAINER */
 .container {
-    margin-top: 80px;   
-    margin-left: 70px;  
+    margin-top: 80px;
+    margin-left: 70px;
     padding: 20px;
+    transition: 0.3s;
 }
 
-
-
-
-
-
+/* TITULOS */
 h1 {
     color: #114fa8;
     text-align: center;
     margin-bottom: 35px;
 }
-
-
-
 
 h2 {
     margin-top: 40px;
@@ -32,48 +34,55 @@ h2 {
     margin-bottom: 30px;
 }
 
-
+/* FORM */
 .form {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-bottom: 30px;
 }
 
-
+/* INPUTS */
 input,
 select {
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
-
+/* BOTÕES */
 button {
     background: #114fa8;
     color: white;
     border: none;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
 }
-
 
 button:hover {
     background: #0a3c84;
 }
 
+/* PESQUISA */
+.barra-pesquisa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-
-.table-container {
+/* TABELA */
+.tabela-container {
     width: 100%;
     margin: 30px 0;
     background: #ffffff;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
+    overflow-x: auto;
 }
-
 
 table {
     border-radius: 12px;
@@ -82,7 +91,7 @@ table {
     border-spacing: 0;
     margin: 0 auto;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 th {
@@ -97,53 +106,68 @@ td {
     border: none;
 }
 
-
+/* STATUS */
 .status-ativo {
     color: green;
     font-weight: bold;
 }
-
 
 .status-inativo {
     color: red;
     font-weight: bold;
 }
 
-
+/* BOTÃO EXCLUIR */
 .btn-excluir {
     background: #dc2626;
 }
-
 
 .btn-excluir:hover {
     background: #b91c1c;
 }
 
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
 @media (max-width: 1024px) {
 
     .container {
         margin-left: 60px;
+        padding: 18px;
     }
 
-    .sidebar.ativo ~ .container {
-        margin-left: 200px;
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .barra-pesquisa {
+        flex-wrap: wrap;
     }
 }
 
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 
 @media (max-width: 768px) {
 
     .container {
-        margin-left: 55px;
+        margin-left: 60px;
         padding: 15px;
     }
 
-    .sidebar.ativo ~ .container {
-        margin-left: 180px;
+    h1 {
+        font-size: 22px;
     }
 
+    h2 {
+        font-size: 20px;
+    }
+
+    /* FORM MOBILE */
     .form {
-        display: flex;         
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -152,17 +176,35 @@ td {
     select,
     button {
         width: 100%;
-        height: 40px;
+        height: 42px;
         font-size: 14px;
     }
 
-    .table-container {
+    /* PESQUISA MOBILE */
+    .barra-pesquisa {
+        flex-direction: column;
+    }
+
+    /* TABELA MOBILE */
+    .tabela-container {
+        padding: 10px;
         overflow-x: auto;
-        padding: 15px;
     }
 
     table {
-        min-width: 600px; 
+        min-width: 500px;
     }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
 
 }

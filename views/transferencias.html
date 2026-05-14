@@ -54,7 +54,7 @@
 
         <h1>Histórico de movimentação</h1>
 
-        <div class="tabela-area">
+       
             <div class="historico-filtros">
                 <div class="buscar-box">
                     <span class="icone-busca">⌕</span>
@@ -75,21 +75,22 @@
                     <option value="Mês">Mês</option>
                 </select>
             </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Tipo</th>
-                        <th>Produto</th>
-                        <th>Transferência</th> 
-                        <th>Quantidade</th> 
-                        <th>Responsável</th>
-                        <th>Observação</th>
-                    </tr>
-                </thead>
-                <tbody id="tabelaMovimentos"></tbody>
-            </table>
+            <div class="tabela-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th>Produto</th>
+                            <th>Transferência</th>
+                            <th>Quantidade</th>
+                            <th>Responsável</th>
+                            <th>Observação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaMovimentos"></tbody>
+                </table>
+            </div>
         </div>
 
     </div>
@@ -100,7 +101,7 @@
     <script src="../../js/components/loadSidebar.js"></script>
     <script src="/js/components/loadNavbar.js"></script>
     <script src="../../js/pages/estoque.js"></script>
-    
+
 </body>
 
 </html>

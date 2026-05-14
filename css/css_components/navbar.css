@@ -65,11 +65,11 @@
     }
 
     .logo-navbar {
-        height: 60px; 
+        height: 120px; 
     }
 
     .usuario {
-        font-size: 14px;
+        font-size: 16px;
         margin-right: 10px;
     }
 }
